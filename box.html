@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Backface</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<style type="text/css">
+	
+	.card{
+		width: 400px;
+		height:600px;
+		border:solid;
+		perspective: 1000px
+	}
+
+	.cardintro{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		transform-style: preserve-3d;
+		transition: transform .3s ease-in;
+		font-size: 30px;
+	}
+
+	.card:hover .cardintro{
+		transform: rotateY(180deg);
+	}
+
+	.front, .back{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+	}
+
+	.front{
+		background: red;
+		z-index: 2;
+	}
+
+	.back{
+		background: black;
+		color: white;
+		z-index: 1;
+		transform: rotateY(180deg);
+	}
+
+
+</style>
+
+</head>
+<body>
+
+	<div class="card">
+
+		<div class="cardintro">
+
+			<div class="front">Adelante</div>
+			<div class="back">Atras</div>
+
+		</div>
+
+	</div>
+	
+</body>
+</html>

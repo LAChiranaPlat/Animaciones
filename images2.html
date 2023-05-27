@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.canva{
+			margin: 100px auto 0 auto;
+			width: 400px;
+			height: 800px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.canva>img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%) scale(.5,.5);
+			transition: transform .3s ease-in;
+			will-change: transform;
+		}
+
+		.canva>img:hover{
+			transform: translate(-50%,-50%) scale(.8,.8);
+		}
+		/*
+			
+			jpg		fotos personales
+			png 	
+			gif 	
+			svg 
+
+			webp
+
+		*/
+
+		.canva__tag{
+			position: absolute;
+			width: 100%;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			font-size: 30px;
+		}
+
+		.canva__titulo{
+			background: orange;
+			top: -100px;
+			transition: transform .3s ease-in;
+			will-change: transform;
+		}
+
+		.canva__horario{
+			bottom: -100px;
+			background: red;
+			transition: transform .3s ease-in;
+			will-change: transform;
+		}
+
+		.canva__publico{
+			bottom: 0;
+			top: 0;
+			margin: auto;
+			right: -100px;
+			width: 100px;
+			background: black;
+			border-top-left-radius: 25px;
+			border-bottom-left-radius: 25px;
+			transition: transform .3s ease-in;
+			will-change: transform;
+		}
+
+		.canva__info{
+			top: -35px;
+			right: -35px;
+			width: 30px;
+			height: 30px;
+			background: white;
+			transition: transform .3s ease-in;
+			will-change: transform;	
+		}
+
+		.canva:hover .canva__titulo{
+			transform: translateY(100px);
+		}
+
+		.canva:hover .canva__horario{
+			transform: translateY(-100px);
+		}
+
+		.canva:hover .canva__publico{
+			transform: translateX(-100px);
+		}
+
+		.canva:hover .canva__info{
+			transform: translate(-40px,40px);
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="canva">
+
+		<img src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9b/Avenger_Endgame_Poster_Oficial.png/revision/latest?cb=20190326185910&path-prefix=es" />
+
+		<div class="canva__tag canva__titulo">Infity War</div>
+		<div class="canva__tag canva__horario">8pm a 10pm</div>
+		<div class="canva__tag canva__publico"></div>
+		<div class="canva__tag canva__info"></div>
+
+	</div>
+
+</body>
+</html>

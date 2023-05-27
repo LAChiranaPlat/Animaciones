@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galeria</title>
+
+	<style type="text/css">
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.galery{
+			width: 800px;
+			height: auto;
+			border: solid;
+			margin: auto;
+
+			display: flex;
+			flex-flow: wrap;
+			justify-content: flex-start;
+			padding: 10px;
+		}
+
+		.img>img{
+			width: 150px;
+			margin: 0 2px;
+			opacity: 0.2;
+			transition: 
+					opacity .4s ease-out,
+					transform .4s ease-out;
+			will-change: opacity, transform;
+		}
+
+		.img>img:hover{
+			opacity: 1;
+			transform: scale(5,5);
+			position: relative;
+			z-index: 10;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="galery">
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure><figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+		<figure class="img">
+			<img src="https://images.squarespace-cdn.com/content/59d7e2c7e45a7c0ce235bb55/1556575490762-MGTN1PLPWES220M9XELE/Avengers-Endgame-Film-Review.jpg?format=1500w&content-type=image%2Fjpeg" />
+		</figure>
+
+	</div>
+
+</body>
+</html>
